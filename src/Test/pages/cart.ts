@@ -1,13 +1,13 @@
 import { Selector } from 'testcafe';
 
 export default class CartPage {
-  verifyItemOneInCart: Selector;
-  verifyItemTwoInCart: Selector;
+  verifyItemInCart: Selector;
   CheckOut: Selector;
+  pageTitle: Selector;
   
   constructor() {
-    this.verifyItemOneInCart = Selector('div[class=inventory_item_name]');
-    this.verifyItemTwoInCart = Selector('div[class=inventory_item_name]');
+    this.pageTitle = Selector('span[class=title]')
+    this.verifyItemInCart = Selector('div[class=inventory_item_name]');
     this.CheckOut = Selector('button[name=checkout]');
   }
 }

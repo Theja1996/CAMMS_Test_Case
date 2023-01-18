@@ -7,9 +7,10 @@ export default class InventoryPage {
   item_1: Selector;
   item_2: Selector;
   cartIcon: Selector;
+  pageTitle: Selector;
 
   constructor() {
-
+    this.pageTitle = Selector('span[class=title]')
     this.productName = Selector('a[id=item_5_title_link]');
     this.productPrice = Selector('div[class=inventory_item_price]');
     this.item_1 = Selector('button[name=add-to-cart-sauce-labs-backpack]');
